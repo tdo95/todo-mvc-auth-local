@@ -15,6 +15,7 @@ require('dotenv').config({path: './config/.env'})
 // Passport config
 require('./config/passport')(passport)
 
+//connect to database via Mongoose
 connectDB()
 
 app.set('view engine', 'ejs')
